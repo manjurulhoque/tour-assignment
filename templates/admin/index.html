@@ -33,6 +33,13 @@
             background-color: #28a745;
             border-color: #28a745;
         }
+
+        .btn-sm {
+            padding: .25rem .5rem;
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+        }
     </style>
 {% endblock %}
 
@@ -64,7 +71,7 @@
                                 {% if model.add_url %}
                                     <td>
                                         {#<a href="{{ model.add_url }}" class="addlink">{% trans 'Add' %}</a>#}
-                                        <a href="{{ model.add_url }}" class="btn btn-primary">{% trans 'Add' %}</a>
+                                        <a href="{{ model.add_url }}" class="btn btn-primary btn-sm">{% trans 'Add' %}</a>
                                     </td>
                                 {% else %}
                                     <td>&nbsp;</td>
@@ -77,9 +84,9 @@
                                         </td>
                                     {% else %}
                                         <td>
-                                            {#                                            <a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a>#}
+                                            {#a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a>#}
                                             <a href="{{ model.admin_url }}"
-                                               class="btn btn-info">{% trans 'Change' %}</a>
+                                               class="btn btn-info btn-sm">{% trans 'Change' %}</a>
                                         </td>
                                     {% endif %}
                                 {% else %}
