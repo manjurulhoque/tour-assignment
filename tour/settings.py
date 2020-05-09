@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'locations',
+    'tours',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +124,7 @@ ADMIN_REORDER = (
     # Rename app
     {'app': 'auth', 'label': 'Admin and Assistant Users'},
     {'app': 'locations', 'label': 'Locations'},
+    {'app': 'tours', 'label': 'Tours'},
 
     # Reorder app models
     # {'app': 'auth', 'models': ('auth.User', 'auth.Group')},
