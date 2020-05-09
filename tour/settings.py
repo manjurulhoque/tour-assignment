@@ -122,6 +122,7 @@ ADMIN_REORDER = (
 
     # Rename app
     {'app': 'auth', 'label': 'Admin and Assistant Users'},
+    {'app': 'locations', 'label': 'Locations'},
 
     # Reorder app models
     # {'app': 'auth', 'models': ('auth.User', 'auth.Group')},

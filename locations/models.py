@@ -9,4 +9,4 @@ class Location(models.Model):
     min_time = models.FloatField(error_messages={'required': 'Minimum time is required'})
 
     def __str__(self):
-        return self.name
+        return f"Name: {self.name}, Minimum Time: {self.min_time}"
