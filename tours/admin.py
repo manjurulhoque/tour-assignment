@@ -7,6 +7,7 @@ from .models import *
 class TourAdmin(admin.ModelAdmin):
     autocomplete_fields = ['locations']
     search_fields = ["name"]
+    save_as = True
 
     class Media:
         js = ("js/custom_script.js",)
